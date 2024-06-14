@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Meio Ambiente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de Meio Ambiente</h1>
+        <div id="welcome">
+            <label for="name">Digite seu nome:</label>
+            <input type="text" id="name" placeholder="Seu nome">
+            <button onclick="startQuiz()">Iniciar Quiz</button>
+        </div>
+        <div id="quiz" style="display:none;">
+            <p id="greeting"></p>
+            <div id="questions"></div>
+            <button onclick="submitQuiz()">Enviar Respostas</button>
+        </div>
+        <div id="result" style="display:none;">
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Reiniciar Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
